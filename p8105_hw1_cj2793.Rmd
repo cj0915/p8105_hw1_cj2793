@@ -35,7 +35,9 @@ According to the results, we know that we have 344 rows (observations) and 8 col
 
 3. We should know the mean flipper length of the penguins in the dataset:
 ```{r}
-mean(penguins$flipper_length_mm, na.rm = TRUE)
+library(tidyverse)
+flipper_length <-- pull(penguins, flipper_length_mm)
+mean(pull(penguins, flipper_length_mm), na.rm = TRUE)
 ```
 Because there is missing data in the dataset, we should use na.rm argument in
 mean() function. According to the result, we know that the mean flipper length 
@@ -87,9 +89,9 @@ For Factor Vector: Mean cannot be calculated.
 
 Finally, we try to convert variables from one type to another:
 ```{r eval=FALSE}
-logical_numeric <- as.numeric(df$Logical_Vector)
-char_numeric <- as.numeric(df$Char_Vector)
-factor_numeric <- as.numeric(df$Factor_Vector)
+logical_numeric <- as.numeric(pull(df, Logical_Vector))
+char_numeric <- as.numeric(pull(df, Char_Vector))
+factor_numeric <- as.numeric(pull(df, Factor_Vector))
 ```
 Here, we can see that:
 
