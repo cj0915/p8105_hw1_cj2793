@@ -19,11 +19,7 @@ Then, we give a short description of the penguins dataset:
 ```{r}
 summary(penguins)
 ```
-According to the summary results, we know that there are 3 species of penguins in
-our dataset and they live in 3 different island. This dataset includes the bill length,
-bill depth, flipper length and body mass of each penguin. There are 165 female penguins
-and 168 male penguins. Unfortunately, 11 of them are unknown of sex. The data were
-collected during 2007 to 2009.
+According to the summary results, we have 8 variables in our dataset. From these variables, we know that there are 3 species of penguins in our dataset and they live in 3 different island. This dataset includes the bill length, bill depth, flipper length and body mass of each penguin. There are 165 female penguins and 168 male penguins. Unfortunately, 11 of them are unknown of sex. The data were collected during 2007 to 2009.
 
 2. We should know the data size in this dataset:
 ```{r}
